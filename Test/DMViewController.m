@@ -31,10 +31,27 @@
 //    rotationAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
 //    [self.loadingView.layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
    
-    [self.loadingView shake:-1
-				withDelta:5
-				 andSpeed:0.1
-           shakeDirection: ShakeDirectionHorizontal];
+//    [self.loadingView shake:-1
+//				withDelta:5
+//				 andSpeed:0.1
+//           shakeDirection: ShakeDirectionHorizontal];
+    
+    
+    
+    [UIView animateWithDuration:1 delay:0 options:UIViewAnimationOptionTransitionNone animations:^{
+        self.loadingView.layer.transform = CATransform3DMakeRotation(M_PI,1.0,0.0,0.0);
+    } completion:^(BOOL finished){
+        NSLog(@"Finished first pi");
+        [UIView animateWithDuration:1 delay:0 options:UIViewAnimationOptionTransitionNone animations:^{
+            self.loadingView.layer.transform = CATransform3DMakeRotation(M_PI,1.0,0.0,0.0);
+        }  completion:^(BOOL finished) {
+            NSLog(@"Finished second pi");
+            self.loadingView.layer.transform = CATransform3DConcat(self.loadingView.layer.transform, CATransform3DMakeRotation(M_PI,1.0,0.0,0.0));
+
+            
+        }];
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning
