@@ -21,6 +21,8 @@
 		FE1DD6CE196AAE6E008AD053 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1DD6B0196AAE6E008AD053 /* UIKit.framework */; };
 		FE1DD6D6196AAE6E008AD053 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE1DD6D4196AAE6E008AD053 /* InfoPlist.strings */; };
 		FE1DD6D8196AAE6E008AD053 /* TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1DD6D7196AAE6E008AD053 /* TestTests.m */; };
+		FE1DD6F2196AD25C008AD053 /* EduLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = FE1DD6F1196AD25C008AD053 /* EduLogo.png */; };
+		FE1DD6F8196AD71D008AD053 /* UIView+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1DD6F7196AD71D008AD053 /* UIView+Shake.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		FE1DD6D3196AAE6E008AD053 /* TestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestTests-Info.plist"; sourceTree = "<group>"; };
 		FE1DD6D5196AAE6E008AD053 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FE1DD6D7196AAE6E008AD053 /* TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTests.m; sourceTree = "<group>"; };
+		FE1DD6F1196AD25C008AD053 /* EduLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EduLogo.png; sourceTree = "<group>"; };
+		FE1DD6F6196AD71D008AD053 /* UIView+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Shake.h"; sourceTree = "<group>"; };
+		FE1DD6F7196AD71D008AD053 /* UIView+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shake.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,10 +117,13 @@
 		FE1DD6B2196AAE6E008AD053 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				FE1DD6F1196AD25C008AD053 /* EduLogo.png */,
 				FE1DD6BB196AAE6E008AD053 /* DMAppDelegate.h */,
 				FE1DD6BC196AAE6E008AD053 /* DMAppDelegate.m */,
 				FE1DD6BE196AAE6E008AD053 /* Main.storyboard */,
 				FE1DD6C1196AAE6E008AD053 /* DMViewController.h */,
+				FE1DD6F6196AD71D008AD053 /* UIView+Shake.h */,
+				FE1DD6F7196AD71D008AD053 /* UIView+Shake.m */,
 				FE1DD6C2196AAE6E008AD053 /* DMViewController.m */,
 				FE1DD6C4196AAE6E008AD053 /* Images.xcassets */,
 				FE1DD6B3196AAE6E008AD053 /* Supporting Files */,
@@ -231,6 +239,7 @@
 			files = (
 				FE1DD6C5196AAE6E008AD053 /* Images.xcassets in Resources */,
 				FE1DD6B7196AAE6E008AD053 /* InfoPlist.strings in Resources */,
+				FE1DD6F2196AD25C008AD053 /* EduLogo.png in Resources */,
 				FE1DD6C0196AAE6E008AD053 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE1DD6B9196AAE6E008AD053 /* main.m in Sources */,
+				FE1DD6F8196AD71D008AD053 /* UIView+Shake.m in Sources */,
 				FE1DD6C3196AAE6E008AD053 /* DMViewController.m in Sources */,
 				FE1DD6BD196AAE6E008AD053 /* DMAppDelegate.m in Sources */,
 			);
